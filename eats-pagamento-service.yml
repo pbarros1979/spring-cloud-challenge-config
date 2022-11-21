@@ -31,11 +31,11 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://host.docker.internal:8761/eureka
+      defaultZone: http://service-registry:8761/eureka
       
 kafka:
   server:
-    url: 172.19.227.10:9092
+    url: kafka:9092
   topics:
     pedido:
       confirma:
